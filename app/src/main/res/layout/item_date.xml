@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:textColor="@color/read_color"
+    android:text="今日热闻"
+    android:paddingStart="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#f0f0f0"
+    />

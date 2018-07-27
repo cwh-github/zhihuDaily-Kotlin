@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_ripple"
+    >
+
+    <ImageView
+        android:id="@+id/commentImage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/comment_avatar"
+        />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/commentImage"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/splash_bg_color"
+        android:textStyle="bold"
+        android:layout_marginRight="42dp"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/textVoteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/read_color"
+        android:text="0"
+        android:layout_marginRight="18dp"
+        android:drawableLeft="@mipmap/comment_vote"
+        android:drawablePadding="6dp"
+        />
+
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_alignStart="@id/userName"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:textColor="@color/splash_bg_color"
+        android:textSize="15sp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <TextView
+        android:id="@+id/commentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/read_color"
+        android:layout_alignStart="@id/userName"
+        android:layout_below="@id/textComment"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/commentTime"
+        android:background="@color/part_line"
+        />
+
+
+</RelativeLayout>

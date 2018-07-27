@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a2ed</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorAccent">#00a2ed</color>
+    <color name="window_bg_true">#f6f8fc</color>
+    <color name="splash_bg_color">#333333</color>
+    <color name="read_color">#7c7c7c</color>
+    <color name="click_color">#f0f0f0</color>
+    <color name="read_bg_color">#FFF9F8F8</color>
+    <color name="normal">#FFF1EFEF</color>
+    <color name="part_line">#FFEBE9E9</color>
+
+</resources>

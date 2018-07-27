@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ll_foot"
+		android:visibility="visible"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:indeterminateDrawable="@drawable/my_progress_background"
+			android:layout_gravity="center_vertical"
+			/>
+
+		<TextView
+			android:id="@+id/tvLoad"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="Loading"
+			android:textColor="@android:color/black"
+			android:textSize="15dp"
+			android:layout_gravity="center_vertical"
+			/>
+	</LinearLayout>
+
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ll_foot_fail"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/tvLoad_fail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="Loading Fail"
+			android:textColor="@android:color/black"
+			android:textSize="15dp"/>
+	</LinearLayout>
+
+</RelativeLayout>
