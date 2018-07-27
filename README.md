@@ -1,2 +1,2 @@
-# zhihuiDaily-Kotlin
+# zhihuDaily-Kotlin
 Kotlin 仿知乎日报
