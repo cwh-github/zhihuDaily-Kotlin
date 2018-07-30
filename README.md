@@ -1,4 +1,4 @@
-# zhihuiDaily-Kotlin
+# zhihuDaily-Kotlin
 Kotlin 仿知乎日报
 
 ![](picture/348739744920168662.png)
