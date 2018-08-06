@@ -1,33 +1,24 @@
 package com.example.cwh_pc.dailynewsstudy
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.CoordinatorLayout
-import android.support.v7.app.AppCompatDelegate
 import android.text.TextUtils
-import android.view.ActionProvider
 import android.view.View
-import com.example.cwh_pc.dailynewsstudy.presenter.NewsStoryDetailsPresenter
-import com.example.cwh_pc.dailynewsstudy.view.DetailsView
-import kotlinx.android.synthetic.main.activity_story_details.*
 import android.view.ViewGroup
-import android.view.ViewGroup.LayoutParams
-
-import android.view.ViewParent
 import com.example.cwh_pc.dailynewsstudy.extension.*
 import com.example.cwh_pc.dailynewsstudy.model.entities.*
 import com.example.cwh_pc.dailynewsstudy.presenter.CommentsPresenter
+import com.example.cwh_pc.dailynewsstudy.presenter.NewsStoryDetailsPresenter
 import com.example.cwh_pc.dailynewsstudy.presenter.StoryDBPresenter
 import com.example.cwh_pc.dailynewsstudy.view.CommentsView
+import com.example.cwh_pc.dailynewsstudy.view.DetailsView
 import com.like.LikeButton
 import com.like.OnLikeListener
+import kotlinx.android.synthetic.main.activity_story_details.*
 import org.jetbrains.anko.dip
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.toast
 import java.io.BufferedReader
-import java.io.FileReader
 import java.io.InputStreamReader
-import java.io.Reader
 
 
 class StoryDetailsActivity : BaseActivity(), DetailsView, CommentsView ,StoryDBPresenter.OnQueryListener{
@@ -234,11 +225,11 @@ class StoryDetailsActivity : BaseActivity(), DetailsView, CommentsView ,StoryDBP
 
         likeButton.setOnLikeListener(object :OnLikeListener{
             override fun liked(p0: LikeButton?) {
-                toast("虽然可以点，但并没卵用ㄟ( ▔, ▔ )ㄏ")
+              this@StoryDetailsActivity.toast("虽然可以点，但并没卵用ㄟ( ▔, ▔ )ㄏ")
             }
 
             override fun unLiked(p0: LikeButton?) {
-                toast("虽然可以点，但并没卵用ㄟ( ▔, ▔ )ㄏ")
+                this@StoryDetailsActivity.toast("虽然可以点，但并没卵用ㄟ( ▔, ▔ )ㄏ")
             }
 
         })
