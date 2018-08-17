@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_collect.*
 
 class CollectActivity : AppCompatActivity(),StoryDBPresenter.OnQueryCollectListener {
 
+
     override fun onQuerySuccess(stories: List<Story>) {
         if(stories==null || stories.isEmpty()){
             textNoData.visibility=View.VISIBLE

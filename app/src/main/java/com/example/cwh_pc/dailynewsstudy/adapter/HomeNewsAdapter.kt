@@ -218,14 +218,14 @@ class HomeNewsAdapter(var newsData: ArrayList<Story>?,var topNews:ArrayList<TopS
 
             mDispose=Flowable.interval(3,TimeUnit.SECONDS)
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(Consumer {
+                    .subscribe{
                         if(currentIndex<(topNews?.size ?:0)-1){
                             currentIndex += 1
                         }else{
                             currentIndex=0
                         }
                         viewPager?.currentItem=currentIndex
-                    })
+                    }
             tapLinear.removeAllViews()
             for(i in 0 until (topNews?.size ?: 0)){
                 val imageView=ImageView(context)
