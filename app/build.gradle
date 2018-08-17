@@ -110,6 +110,7 @@ dependencies {
 
 
 
+
     //room
     implementation 'android.arch.persistence.room:runtime:latest.release'
     kapt 'android.arch.persistence.room:compiler:latest.release'
