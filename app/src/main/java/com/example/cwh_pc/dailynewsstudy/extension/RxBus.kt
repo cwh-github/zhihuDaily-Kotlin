@@ -28,7 +28,7 @@ class RxBus{
 
     companion object {
         @Volatile
-       private var INSTANCE:RxBus?=null
+        private var INSTANCE:RxBus?=null
 
         fun newInstance():RxBus{
             if(INSTANCE==null){

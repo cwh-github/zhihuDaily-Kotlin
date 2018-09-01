@@ -2,6 +2,7 @@ package com.example.cwh_pc.dailynewsstudy.db.converter
 
 import android.arch.persistence.room.TypeConverter
 import android.text.TextUtils
+import java.util.concurrent.Executors
 
 class Converter{
     @TypeConverter
@@ -11,6 +12,7 @@ class Converter{
         }
         val sb=StringBuffer()
         sb.append(array[0])
+
         for(i in 1 until array.size){
             sb.append("~").append(array[i])
         }

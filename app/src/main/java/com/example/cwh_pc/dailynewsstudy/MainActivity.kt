@@ -146,6 +146,7 @@ class MainActivity : BaseActivity(), HomeView {
 
     fun notityToolbarTitle(title: String) {
         toolbar.title = title
+        toolbar.translationY
     }
 
     /**
