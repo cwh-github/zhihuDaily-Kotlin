@@ -1,10 +1,13 @@
 package com.example.cwh_pc.dailynewsstudy.extension
 
 import android.view.View
+import android.widget.Toast
+import com.example.cwh_pc.dailynewsstudy.R
 import com.jakewharton.rxbinding2.view.RxView
 import io.reactivex.Observable
 import io.reactivex.functions.Action
 import io.reactivex.functions.Consumer
+import kotlinx.android.synthetic.main.list_aditor_item.view.*
 import java.util.concurrent.TimeUnit
 
 /**
@@ -26,5 +29,15 @@ fun View.longClick(function: (View) -> Unit){
                 function(this)
             }
 
+}
+
+
+
+var functionClick:(View)->Unit={
+    when(it.id){
+        R.id.mImageEditor->
+           LogUtils.d(msg="have id")
+        else -> LogUtils.d(msg="do nothing")
+    }
 }
 
